@@ -1,6 +1,6 @@
 <?php
 
-namespace Fahmiardi\Mongodb\Permissions\Models;
+namespace LuongTran\Mongodb\Permissions\Models;
 
 use Moloquent\Eloquent\Model;
 use Spatie\Permission\Contracts\Role as RoleContract;

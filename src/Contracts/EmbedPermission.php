@@ -1,6 +1,6 @@
 <?php
 
-namespace Fahmiardi\Mongodb\Permissions\Contracts;
+namespace LuongTran\Mongodb\Permissions\Contracts;
 
 interface EmbedPermission
 {

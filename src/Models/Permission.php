@@ -1,9 +1,10 @@
 <?php
 
-namespace Fahmiardi\Mongodb\Permissions\Models;
+namespace LuongTran\Mongodb\Permissions\Models;
 
 use Moloquent\Eloquent\Model;
 use Spatie\Permission\Contracts\Permission as PermissionContract;
+use Jenssegers\Mongodb\Eloquent\Relations\BelongsToMany;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 
 class Permission extends Model implements PermissionContract
@@ -13,10 +14,20 @@ class Permission extends Model implements PermissionContract
      *
      * @return \Illuminate\Support\Collection $roles
      */
-    public function roles()
+    public function roles():  \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
-        return $this->getPermissions(
-            config('laravel-permission.models.role')
+        // return $this->getPermissions(
+        //     config('laravel-permission.models.role')
+        // );
+        // return $this->belongsToMany(
+        //     config('permission.models.role'),
+        //     config('permission.table_names.role_has_permissions'),
+        //     PermissionRegistrar::$pivotPermission,
+        //     PermissionRegistrar::$pivotRole
+        // );
+
+        return $this->embedsMany(
+            config('laravel-permission.table_names.role_has_permissions')
         );
     }
 

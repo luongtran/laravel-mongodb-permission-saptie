@@ -1,15 +1,15 @@
 <?php
 
-namespace Fahmiardi\Mongodb\Permissions;
+namespace LuongTran\Mongodb\Permissions;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
-use Fahmiardi\Mongodb\Permissions\Contracts\EmbedPermission as EmbedPermissionContract;
-use Fahmiardi\Mongodb\Permissions\Contracts\EmbedRole as EmbedRoleContract;
-use Fahmiardi\Mongodb\Permissions\Models\Permission;
-use Fahmiardi\Mongodb\Permissions\Models\Role;
-use Fahmiardi\Mongodb\Permissions\Traits\HasPermissions;
-use Fahmiardi\Mongodb\Permissions\Traits\HasRoles;
+use LuongTran\Mongodb\Permissions\Contracts\EmbedPermission as EmbedPermissionContract;
+use LuongTran\Mongodb\Permissions\Contracts\EmbedRole as EmbedRoleContract;
+use LuongTran\Mongodb\Permissions\Models\Permission;
+use LuongTran\Mongodb\Permissions\Models\Role;
+use LuongTran\Mongodb\Permissions\Traits\HasPermissions;
+use LuongTran\Mongodb\Permissions\Traits\HasRoles;
 
 class PermissionServiceProvider extends ServiceProvider
 {

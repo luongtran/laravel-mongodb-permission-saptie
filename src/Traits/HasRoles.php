@@ -1,10 +1,10 @@
 <?php
 
-namespace Fahmiardi\Mongodb\Permissions\Traits;
+namespace LuongTran\Mongodb\Permissions\Traits;
 
 use Spatie\Permission\Contracts\Permission;
 use Spatie\Permission\Contracts\Role;
-use Fahmiardi\Mongodb\Permissions\Contracts\EmbedRole;
+use LuongTran\Mongodb\Permissions\Contracts\EmbedRole;
 use Carbon\Carbon;
 
 trait HasRoles
@@ -38,9 +38,9 @@ trait HasRoles
     /**
      * Assign the given role to the user.
      *
-     * @param array|string|\Fahmiardi\Mongodb\Permissions\Models\Role ...$roles
+     * @param array|string|\LuongTran\Mongodb\Permissions\Models\Role ...$roles
      *
-     * @return \Fahmiardi\Mongodb\Permissions\Contracts\Role
+     * @return \LuongTran\Mongodb\Permissions\Contracts\Role
      */
     public function assignRole(...$roles)
     {

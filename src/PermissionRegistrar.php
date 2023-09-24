@@ -1,6 +1,6 @@
 <?php
 
-namespace Fahmiardi\Mongodb\Permissions;
+namespace LuongTran\Mongodb\Permissions;
 
 use Illuminate\Contracts\Cache\Repository;
 use Illuminate\Cache\CacheManager;

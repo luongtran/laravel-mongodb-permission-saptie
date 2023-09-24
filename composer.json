@@ -22,9 +22,10 @@
         }
     ],
     "require": {
-	"illuminate/container": "^10.0",
+	   "illuminate/container": "^10.0",
         "spatie/laravel-permission": "^5.5",
-        "luongtran/moloquent": "^1.0.0"
+        "luongtran/moloquent": "^1.0.0",
+        "jenssegers/mongodb": "4.0.0-rc1",
     },
     "autoload": {
         "psr-4": {
